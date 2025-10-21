@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad - Payload Industrial</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        
+        /* Estilos del Header (Fondo Blanco, Logo Derecha) */
+        header { 
+            background: white; 
+            color: #800000;
+            padding: 10px 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid #800000;
+        }
+        h1 { 
+            color: #800000; 
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+        }
+        .header-logo {
+            max-width: 200px;
+            height: auto;
+            margin-left: 20px;
+        }
+        
+        /* Estilos del Menú */
+        nav { display: flex; justify-content: center; background: #c0c0c0; padding: 10px 0; }
+        nav a { color: #800000; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        
+        /* Estilos de Contenido */
+        h2 { color: #800000; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        h3 { color: #800000; }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Payload Industrial: Explotando PLCs y la Respuesta de Ciberdefensa Desplegable</h1>
+        <img src="imagenes/uai.png" alt="Logo UAI" class="header-logo">
+    </header>
+
+    <nav>
+        <a href="/">INICIO</a>
+        <a href="agenda.html">AGENDA</a>
+        <a href="casos_de_uso.html">CASOS DE USO</a>
+        <a href="produccion.html">PRODUCCIÓN CIENTÍFICA</a>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="actividad.html">ACTIVIDAD</a> </nav>
+    
+    <div class="container">
+        <h2>Actividad</h2>
+        
+        <h3>Buscá y apagá nuestros PLCs</h3>
+        
+        <p>¡Te desafiamos a poner a prueba tus conocimientos en seguridad industrial!</p>
+        
+        <p>Utilizando las bocas de red disponibles en nuestro Banco de Pruebas SCADA, o conectándote a nuestra red de forma remota, tu misión es encontrar nuestros PLCs activos y alterar su estado, intentando apagarlos (poner sus bobinas a 0 lógico) o forzar un cambio en su modo de operación.</p>
+        
+        <h4>Instrucciones:</h4>
+        <ol>
+            <li>**Identifica la red:** Determina el rango de direcciones IP utilizado en el Banco de Pruebas.</li>
+            <li>**Descubre los PLCs:** Utiliza herramientas de escaneo (como Nmap o scripts Modbus) para encontrar los dispositivos en el Nivel 1 (PLCs) y sus servicios activos (puerto 502).</li>
+            <li>**Explota la debilidad:** Utiliza los comandos o herramientas Modbus TCP para escribir datos directamente en las direcciones de las bobinas o registros de salida de los PLCs.</li>
+            <li>**Verifica el impacto:** Observa si la luz de operación de los PLCs se apaga o si se altera el comportamiento de los indicadores conectados al banco.</li>
+        </ol>
+        
+        <p>¡Mucha suerte! Si logras apagar un PLC, te invitamos a que nos muestres cómo lo hiciste. Nuestro equipo de ciberdefensa desplegable estará listo para responder a tu ataque.</p>
+        
+    </div>
+</body>
+</html>
