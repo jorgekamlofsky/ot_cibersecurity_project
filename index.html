@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto de investigación en Ciberseguridad OT de UAI - CAETI. Un abordaje end-to-end a la Ciberseguridad OT.">
+  <meta name="theme-color" content="#003b70">
+  <title>Ciberseguridad OT | UAI - CAETI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <img src="imagenes/logo-uai.png" alt="Universidad Abierta Interamericana" class="uai-logo">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="caeti-mark">CAETI</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-menu" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#analisis">Análisis</a>
+        <a href="#mejoras">Mejoras</a>
+        <a href="#respuesta">Respuesta</a>
+        <a href="#desafios">Desafíos</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="produccion-cientifica.html">Producción científica</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CIBERSEGURIDAD · TECNOLOGÍAS OPERACIONALES</p>
+          <h1>Un abordaje <span>end-to-end</span> a la Ciberseguridad OT</h1>
+          <p class="hero-lead">
+            Investigación aplicada para comprender, proteger y responder ante
+            amenazas que afectan a sistemas de control industrial e infraestructuras críticas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#analisis">Explorar la investigación</a>
+            <a class="btn btn-secondary" href="produccion-cientifica.html">Ver publicaciones</a>
+          </div>
+        </div>
+
+        <div class="hero-diagram" aria-label="Recorrido de investigación: diagnóstico, impacto, prevención y respuesta">
+          <div class="flow-card">
+            <span class="flow-number">01</span>
+            <strong>Diagnóstico</strong>
+            <small>ICS / CISA</small>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-card">
+            <span class="flow-number">02</span>
+            <strong>Impacto</strong>
+            <small>Experimentación OT</small>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-card">
+            <span class="flow-number">03</span>
+            <strong>Prevención</strong>
+            <small>Forensia en vivo</small>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-card accent">
+            <span class="flow-number">04</span>
+            <strong>Respuesta</strong>
+            <small>Ciberdefensa desplegable</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem-section">
+      <div class="container narrow">
+        <p class="eyebrow">EL PROBLEMA</p>
+        <h2>Proteger OT sin perder de vista la operación</h2>
+        <p class="section-intro">
+          Los sistemas de tecnologías operacionales deben mantener disponibilidad,
+          continuidad y determinismo. Al mismo tiempo, su creciente integración y
+          conectividad amplían la superficie de exposición.
+        </p>
+
+        <div class="purdue-card">
+          <div>
+            <span class="card-kicker">ARQUITECTURA OT</span>
+            <h3>De la gestión empresarial al proceso físico</h3>
+            <p>
+              La investigación aborda la seguridad de las distintas capas que
+              intervienen en un entorno industrial: gestión, supervisión, control
+              y proceso físico.
+            </p>
+          </div>
+          <img src="imagenes/arquitectura_purdue_ot.png"
+               alt="Esquema de arquitectura Purdue para un entorno industrial"
+               loading="lazy">
+        </div>
+
+        <div class="three-cards">
+          <article class="info-card">
+            <span class="icon">01</span>
+            <h3>Mayor superficie de ataque</h3>
+            <p>La integración IT/OT y la conectividad incorporan nuevas vías de exposición.</p>
+          </article>
+          <article class="info-card">
+            <span class="icon">02</span>
+            <h3>Protocolos legados</h3>
+            <p>Persisten tecnologías industriales que fueron diseñadas con prioridades diferentes a las de la ciberseguridad actual.</p>
+          </article>
+          <article class="info-card">
+            <span class="icon">03</span>
+            <h3>Rigidez de actualización</h3>
+            <p>Actualizar software o firmware puede afectar disponibilidad y determinismo del proceso.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="analisis">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow light">02 · ANÁLISIS</p>
+            <h2>De los incidentes a la evidencia</h2>
+          </div>
+          <p>
+            La línea de investigación relaciona incidentes, vulnerabilidades,
+            controles de seguridad e impacto para identificar oportunidades de mitigación.
+          </p>
+        </div>
+
+        <div class="analysis-grid">
+          <article class="research-card">
+            <div class="research-card-body">
+              <span class="card-kicker">ANTECEDENTE</span>
+              <h3>RISI</h3>
+              <p>
+                El Repository of Industrial Security Incidents constituye un punto
+                de partida para estudiar históricamente incidentes de seguridad en
+                sistemas industriales.
+              </p>
+              <p class="highlight-text">Incidentes → controles → impacto → mitigación</p>
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="research-card-body">
+              <span class="card-kicker">ANÁLISIS ACTUAL</span>
+              <h3>ICS / CISA</h3>
+              <p>
+                El análisis de alertas ICS permite observar vulnerabilidades,
+                efectos de explotación, dimensiones afectadas y subsistemas comprometidos.
+              </p>
+              <p class="metric"><strong>130</strong><span>alertas analizadas</span></p>
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="research-card-body">
+              <span class="card-kicker">EVIDENCIA</span>
+              <h3>Casos de estudio</h3>
+              <p>
+                Stuxnet, Shamoon y WannaCry permiten contrastar ataques conocidos
+                con controles de seguridad y condiciones de mitigación.
+              </p>
+              <p class="highlight-text">Ataque → condición → control → impacto</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="wide-visual">
+          <button class="image-button" type="button" data-lightbox="imagenes/analisis_alertas_cisa.png" data-caption="Análisis de alertas ICS/CISA">
+            <img src="imagenes/analisis_alertas_cisa.png"
+                 alt="Gráficos del análisis de alertas ICS/CISA"
+                 loading="lazy">
+          </button>
+          <p class="image-caption">Análisis de alertas ICS/CISA · toque la imagen para ampliar</p>
+        </div>
+
+        <div class="stat-callout">
+          <strong>63%</strong>
+          <span>de las mitigaciones analizadas recomiendan evitar la conexión del sistema de supervisión/control con otras redes.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mejoras">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 · MEJORAS A LA INFRAESTRUCTURA</p>
+            <h2>Proteger sin detener</h2>
+          </div>
+          <p>
+            El abordaje combina mecanismos de protección, observación forense
+            y nuevas técnicas de análisis.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-image">
+              <div class="placeholder-icon">🔐</div>
+            </div>
+            <div class="feature-body">
+              <span class="card-kicker">PROTECCIÓN</span>
+              <h3>Criptografía OT</h3>
+              <p>
+                Investigación sobre la incorporación de mecanismos criptográficos
+                en entornos donde conviven protocolos clásicos, restricciones de
+                operación y necesidades de disponibilidad.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <button class="image-button feature-image" type="button"
+                    data-lightbox="imagenes/forensia_en_vivo.png"
+                    data-caption="Forensia en vivo en entornos OT">
+              <img src="imagenes/forensia_en_vivo.png"
+                   alt="Ilustración de forensia en vivo en entornos OT"
+                   loading="lazy">
+            </button>
+            <div class="feature-body">
+              <span class="card-kicker">VISIBILIDAD</span>
+              <h3>Forensia en vivo</h3>
+              <p>
+                Analizar el entorno SCADA/OT sin interrumpir el proceso ni depender
+                necesariamente de una actualización del sistema.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-image">
+              <div class="placeholder-icon">AI</div>
+            </div>
+            <div class="feature-body">
+              <span class="card-kicker">LÍNEA EN DESARROLLO</span>
+              <h3>IA y Machine Learning</h3>
+              <p>
+                Actualización y análisis de datasets de seguridad para profundizar
+                la identificación de patrones y relaciones en incidentes OT.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section response-section" id="respuesta">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 · RESPUESTA A INCIDENTES</p>
+            <h2>De detectar a responder</h2>
+          </div>
+          <p>
+            La investigación propone una capacidad de ciberdefensa desplegable
+            para asistir el diagnóstico de infraestructura OT.
+          </p>
+        </div>
+
+        <div class="response-layout">
+          <button class="image-button response-photo" type="button"
+                  data-lightbox="imagenes/ciberdefensa_desplegable.jpg"
+                  data-caption="Ciberdefensa desplegable">
+            <img src="imagenes/ciberdefensa_desplegable.jpg"
+                 alt="Equipamiento de una plataforma de ciberdefensa desplegable"
+                 loading="lazy">
+          </button>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <button class="accordion-trigger" type="button" aria-expanded="true">
+                <span><b>01</b> Descubrimiento</span><span class="plus">+</span>
+              </button>
+              <div class="accordion-panel">
+                Identificación de PLC, equipamiento y componentes presentes en la infraestructura.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span><b>02</b> Inventario</span><span class="plus">+</span>
+              </button>
+              <div class="accordion-panel">
+                Relevamiento de software, firmware y elementos de la infraestructura OT.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span><b>03</b> Diagnóstico</span><span class="plus">+</span>
+              </button>
+              <div class="accordion-panel">
+                Identificación de vulnerabilidades y generación de artefactos útiles para auditoría y respuesta.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="desafios">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow light">05 · DESAFÍOS</p>
+            <h2>La seguridad no termina con una solución</h2>
+          </div>
+          <p>
+            Dos tensiones permanecen en el centro de la investigación: proteger
+            las comunicaciones y actualizar sin comprometer la operación.
+          </p>
+        </div>
+
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <span class="challenge-number">01</span>
+            <h3>Criptografía</h3>
+            <div class="big-stat">6,25%</div>
+            <p>de los sistemas relevados utiliza algún protocolo seguro.</p>
+            <div class="bar"><span style="width: 6.25%"></span></div>
+            <p class="small-note">La migración de protocolos clásicos puede requerir cambios de infraestructura.</p>
+          </article>
+
+          <article class="challenge-card">
+            <span class="challenge-number">02</span>
+            <h3>Rigidez de actualización</h3>
+            <p class="challenge-question">
+              ¿Preservar la rigidez en favor del determinismo o romperla en favor de la ciberseguridad?
+            </p>
+            <div class="challenge-balance">
+              <span>Disponibilidad<br><small>Determinismo</small></span>
+              <span class="balance-mark">↔</span>
+              <span>Seguridad<br><small>Actualización</small></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="research-future">
+          <span class="card-kicker">INVESTIGACIÓN EN DESARROLLO</span>
+          <h3>Próximas líneas</h3>
+          <div class="tag-list">
+            <span>Dataset CISA</span>
+            <span>Machine Learning</span>
+            <span>Criptografía OT</span>
+            <span>Forensia en vivo</span>
+            <span>Ciberdefensa desplegable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quienes-somos">
+      <div class="container narrow">
+        <p class="eyebrow">06 · QUIÉNES SOMOS</p>
+        <h2>Investigación aplicada en Ciberseguridad OT</h2>
+        <p class="section-intro">
+          Somos un grupo de investigación vinculado a la Universidad Abierta
+          Interamericana y al CAETI, orientado al estudio de la seguridad de
+          sistemas de control industrial e infraestructuras críticas.
+        </p>
+
+        <div class="identity-card">
+          <img src="imagenes/logo-uai.png" alt="Universidad Abierta Interamericana" class="identity-logo">
+          <div>
+            <span class="card-kicker">UAI · CAETI</span>
+            <h3>Un puente entre investigación y experimentación</h3>
+            <p>
+              La línea integra análisis de incidentes, ciberseguridad industrial,
+              criptografía, informática forense, experimentación sobre PLC/SCADA
+              y nuevas técnicas de análisis.
+            </p>
+          </div>
+        </div>
+
+        <div class="science-link">
+          <div>
+            <span class="card-kicker">PRODUCCIÓN CIENTÍFICA</span>
+            <h3>Conozca nuestros trabajos</h3>
+            <p>Acceda al listado de publicaciones, congresos y trabajos vinculados con esta línea de investigación.</p>
+          </div>
+          <a class="btn btn-primary" href="produccion-cientifica.html">Ver producción científica</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container narrow">
+        <p class="eyebrow light">07 · CONTACTO</p>
+        <h2>Conectemos</h2>
+        <p class="section-intro light-text">
+          Para consultas, colaboraciones, actividades académicas o información sobre la línea de investigación:
+        </p>
+
+        <div class="contact-card">
+          <span class="contact-icon">✉</span>
+          <div>
+            <span class="card-kicker">EMAIL</span>
+            <a href="mailto:uaiciberseguridadot@gmail.com" class="contact-email">uaiciberseguridadot@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a class="contact-action" href="mailto:uaiciberseguridadot@gmail.com">
+            <strong>Enviar un email</strong>
+            <span>Contactar al grupo</span>
+          </a>
+          <a class="contact-action" href="produccion-cientifica.html">
+            <strong>Producción científica</strong>
+            <span>Consultar publicaciones</span>
+          </a>
+          <a class="contact-action" href="#quienes-somos">
+            <strong>UAI · CAETI</strong>
+            <span>Conocer el grupo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Ciberseguridad OT</strong>
+        <span>UAI · CAETI</span>
+      </div>
+      <span>Investigación aplicada en Tecnologías Operacionales</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden>
+    <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+    <figure>
+      <img id="lightbox-image" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
